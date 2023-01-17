@@ -1,9 +1,9 @@
-import { ThemeType } from "ireact-material-icons-svg/lib/types";
 import * as React from "react";
-import styled from "styled-components";
-import * as IReactMaterialIcons from '../../src/icons'
 
-console.log(styled.div)
+import { ThemeType } from "ireact-material-icons-svg/lib/types";
+import styled from "styled-components";
+import AbcBaseline from "../../src/icons/AccountCircleTwoTone";
+
 const Container = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -29,8 +29,6 @@ const NameDescription = styled.p`
 const allIcons: {
   [key: string]: any;
 } = {};
-
-console.log(IReactMaterialIcons)
 
 const AllIconDemo = () => {
   // 当前主题
@@ -71,6 +69,7 @@ const AllIconDemo = () => {
         </select>
       </div>
       <Container>
+        <AbcBaseline></AbcBaseline>
         {visibleIconList.map((iconName) => {
           const Component = allIcons[iconName];
           return (

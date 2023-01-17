@@ -1,5 +1,4 @@
 import * as allIconDefs from "ireact-material-icons-svg";
-import { IconDefinition } from "ireact-material-icons-svg/es/types";
 import { template } from "lodash";
 import { promisify } from "util";
 
@@ -10,6 +9,7 @@ import * as path from "path";
 import { iconsIndex, iconsTemplate } from "./code";
 
 // type
+import type { IconDefinition } from "ireact-material-icons-svg/lib/types";
 
 // 图标定义与标识符
 interface IconDefinitionWithIdentifier extends IconDefinition {
@@ -62,7 +62,7 @@ async function generateIcons() {
     })
     .join("\n");
 
-    console.log('entryText', entryText)
+  console.log("entryText", entryText);
   // 添加入口文件
   await promisify(fs.appendFile)(
     path.resolve(__dirname, "../src/icons/index.tsx"),

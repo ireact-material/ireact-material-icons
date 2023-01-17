@@ -1,19 +1,28 @@
+import { defineConfig } from "father";
+
 const config = {
-  cjs: 'babel',
-  esm: { type: 'babel', importLibToEs: true },
-  preCommit: {
-    eslint: true,
-    prettier: true,
+  cjs: {
+    transformer: "babel",
   },
-  runtimeHelpers: true,
+  esm: {
+    transformer: "babel",
+    alias: {
+      "antd/lib": "antd/es",
+    },
+  },
+  // preCommit: {
+  //   eslint: true,
+  //   prettier: true,
+  // },
+  // runtimeHelpers: true,
 };
 
-if (process.env.NODE_ENV !== 'ci') {
+if (process.env.NODE_ENV !== "ci") {
   config.umd = {
-    globals: { react: 'window.React' },
-    minFile: true,
-    sourcemap: false,
+    externals: { react: "window.React" },
+    // minFile: true,
+    // sourcemap: false,
   };
 }
 
-export default config;
+export default defineConfig(config);
