@@ -127,7 +127,8 @@ const IconBase: IconBaseComponent<IconProps> = (props) => {
   }
 
   // 渲染
-  return generate(target.icon as AbstractNode, `svg-${target.name}`, {
+  return generate(target.icon as AbstractNode,
+    `svg-${target.name}`, {
     className,
     style,
     "data-icon": target.name,

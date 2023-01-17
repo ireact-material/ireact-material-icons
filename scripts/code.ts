@@ -3,8 +3,8 @@ export const iconsTemplate = `
 // DON NOT EDIT IT MANUALLY
 
 import * as React from 'react'
-import <%= svgIdentifier %>Svg from 'ireact-material-icons-svg/lib/asn/<%= svgIdentifier %>';
-import IReactMaterialIcon, { IReactMaterialIconProps } from '../components/IReactMaterialIcon';
+import <%= svgIdentifier %>Svg from 'ireact-material-icons-svg/lib/asn/<%= fatherPath %>/<%= svgIdentifier %>';
+import IReactMaterialIcon, { IReactMaterialIconProps } from '../../components/IReactMaterialIcon';
 
 const <%= svgIdentifier %> = (
   props: IReactMaterialIconProps,

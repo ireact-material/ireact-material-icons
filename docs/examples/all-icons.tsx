@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { ThemeType } from "ireact-material-icons-svg/lib/types";
 import styled from "styled-components";
-import AbcBaseline from "../../src/icons/AccountCircleTwoTone";
+import {AbcBaseline} from "../../src/icons";
 
 const Container = styled.div`
   display: flex;

@@ -5429,10 +5429,10 @@ ireact-material-colors@^0.0.1:
   dependencies:
     "@ctrl/tinycolor" "^3.4.0"
 
-ireact-material-icons-svg@^0.0.4:
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/ireact-material-icons-svg/-/ireact-material-icons-svg-0.0.4.tgz#3a1970aad2dadc890ad8862bfd191009f5d673a5"
-  integrity sha512-2TG1FcQdkdErWwZkr4bvpXS1L0aOW5VR14WE1QRYrb5x15mgWBwkXo92jUTVf9KYlsfNteUhvdBb7+bJ1WpDzA==
+ireact-material-icons-svg@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/ireact-material-icons-svg/-/ireact-material-icons-svg-0.0.6.tgz#6d7f2a1739c311b923e2b3e5a92559630ac1e6fe"
+  integrity sha512-OtdQNzmLvXZxM/vn4Fd4HcbhASEBg3+9K2pbHE6hIY0uAKzJN0go4pg/oLPBxFV6L0Eb6O9lHoUmR+G2VQWlqw==
 
 irregular-plurals@^3.2.0:
   version "3.3.0"

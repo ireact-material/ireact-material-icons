@@ -18,10 +18,10 @@
     "clean": "./scripts/cleanup.sh",
     "start": "dumi dev",
     "lint": "eslint src/ --ext .tsx,.ts",
-    "compile": "father build",
+    "build": "father build",
     "test": "father test",
     "ci": "NODE_ENV=ci npm run prepublishOnly",
-    "prepublishOnly": "npm run generate && npm run compile && npm run lint && npm run test",
+    "prepublishOnly": "npm run generate && npm run build && npm run lint && npm run test",
     "generate": "rimraf src/icons && TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts",
     "g": "npm run generate"
   },
@@ -64,7 +64,7 @@
     "classnames": "^2.3.2",
     "eslint-plugin-react": "^7.32.0",
     "ireact-material-colors": "^0.0.1",
-    "ireact-material-icons-svg": "^0.0.4",
+    "ireact-material-icons-svg": "^0.0.6",
     "rc-util": "^5.27.1",
     "react": "^18.2.0"
   },

@@ -9,8 +9,8 @@ import IconBase from "./IconBase";
 // type
 import { IconDefinition } from "ireact-material-icons-svg/lib/types";
 import type { IconBaseProps } from "./Icon";
-import type { TwoToneColor } from "./twoTonePrimaryColor";
-import { getTwoToneColor, setTwoToneColor } from "./twoTonePrimaryColor";
+import type { TwoToneColor } from "./TwoTonePrimaryColor";
+import { getTwoToneColor, setTwoToneColor } from "./TwoTonePrimaryColor";
 
 export interface IReactMaterialIconProps extends IconBaseProps {
   twoToneColor?: TwoToneColor;

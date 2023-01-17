@@ -9,7 +9,7 @@ export { default } from "./components/Icon";
 export { default as createFromIconFont } from "./components/IconFont";
 
 // 获取双色图标颜色方法
-export * from "./components/twoTonePrimaryColor";
+export * from "./components/TwoTonePrimaryColor";
 
 // 所有svg图标
 export * from "./icons";
