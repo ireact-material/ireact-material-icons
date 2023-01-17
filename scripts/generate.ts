@@ -1,5 +1,5 @@
-import * as allIconDefs from "ireact-material-icon-svg";
-import { IconDefinition } from "ireact-material-icon-svg/es/types";
+import * as allIconDefs from "ireact-material-icons-svg";
+import { IconDefinition } from "ireact-material-icons-svg/es/types";
 import { template } from "lodash";
 import { promisify } from "util";
 

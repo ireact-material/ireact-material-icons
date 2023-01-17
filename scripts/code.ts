@@ -4,15 +4,15 @@ export const iconsTemplate = `
 
 import * as React from 'react'
 import <%= svgIdentifier %>Svg from 'ireact-material-icons-svg/lib/asn/<%= svgIdentifier %>';
-import IReactMaterialIcons, { IReactMaterialIconsProps } from '../components/IReactMaterialIcons';
+import IReactMaterialIcon, { IReactMaterialIconProps } from '../components/IReactMaterialIcon';
 
 const <%= svgIdentifier %> = (
-  props: IReactMaterialIconsProps,
+  props: IReactMaterialIconProps,
   ref: React.MutableRefObject<HTMLSpanElement>,
-) => <IReactMaterialIcons {...props} ref={ref} icon={<%= svgIdentifier %>Svg} />;
+) => <IReactMaterialIcon {...props} ref={ref} icon={<%= svgIdentifier %>Svg} />;
 
 <%= svgIdentifier %>.displayName = '<%= svgIdentifier %>';
-export default React.forwardRef<HTMLSpanElement, IReactMaterialIconsProps>(<%= svgIdentifier %>);
+export default React.forwardRef<HTMLSpanElement, IReactMaterialIconProps>(<%= svgIdentifier %>);
 `;
 
 export const iconsIndex = (entryText: string) => {

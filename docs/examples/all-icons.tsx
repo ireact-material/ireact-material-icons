@@ -1,7 +1,7 @@
-import { ThemeType } from "ireact-material-icon-svg/lib/types";
+import { ThemeType } from "ireact-material-icons-svg/lib/types";
 import * as React from "react";
 import styled from "styled-components";
-// import * as IreactMaterialIcons from '../../src/icons'
+import * as IReactMaterialIcons from '../../src/icons'
 
 console.log(styled.div)
 const Container = styled.div`
@@ -29,6 +29,8 @@ const NameDescription = styled.p`
 const allIcons: {
   [key: string]: any;
 } = {};
+
+console.log(IReactMaterialIcons)
 
 const AllIconDemo = () => {
   // 当前主题
