@@ -97,5 +97,5 @@ if (
 render();
 
 window.g_umi = {
-  version: '4.0.45',
+  version: '4.0.47',
 };

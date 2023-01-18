@@ -33,7 +33,7 @@ export default function DumiContextWrapper() {
 
   return (
     <SiteContext.Provider value={{
-      pkg: {"name":"ireact-material-icons","version":"0.0.1","repository":"https://github.com/ireact-material/ireact-material-icons"},
+      pkg: {"name":"@ireact-material-icons/baseline","version":"0.0.1","license":"MIT","repository":"https://github.com/ireact-material/ireact-material-icons"},
       entryExports,
       demos,
       components,
