@@ -11,11 +11,12 @@
   "typings": "./typings/index.d.ts",
   "exclude": [
     "node_modules",
+    "build",
     "scripts",
     "acceptance-tests",
     "webpack",
     "jest",
-    "src/icons",
+    "src/setupTests.ts",
     "tslint:latest",
     "tslint-config-prettier"
   ]

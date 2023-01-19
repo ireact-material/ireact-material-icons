@@ -1,11 +1,12 @@
 {
-  "name": "@ireact-material-icons/baseline",
+  "name": "@ireact-material-icons/outline",
   "description": "google material icons svg",
   "author": "282126990@qq.com",
   "version": "1.0.6",
   "main": "./lib/index.js",
   "module": "./es/index.js",
   "sideEffects": false,
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/ireact-material/ireact-material-icons"

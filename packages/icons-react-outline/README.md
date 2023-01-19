@@ -3,16 +3,16 @@
 ## Install
 
 ```bash
-yarn add @ireact-material-icons/baseline
+yarn add @ireact-material-icons/outline
 ```
 
 ## Basic Usage
 
-You can import it directly or destructure from `@ireact-material-icons/baseline` when tree-shaking enabled.
+You can import it directly or destructure from `@ireact-material-icons/outline` when tree-shaking enabled.
 
 ```ts
-import SmileBaseline from '@ireact-material-icons/baseline/SmileBaseline';
-import { SmileBaseline } from '@ireact-material-icons/baseline';
+import SmileOutlined from '@ireact-material-icons/outline/SmileOutlined';
+import { SmileOutlined } from '@ireact-material-icons/outline';
 ```
 
 ## Component Interface
