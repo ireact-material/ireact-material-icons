@@ -3,7 +3,7 @@ export const iconsTemplate = `
 // DON NOT EDIT IT MANUALLY
 
 import * as React from 'react'
-import <%= svgIdentifier %>Svg from 'ireact-material-icons-svg/lib/asn/<%= fatherPath %>/<%= svgIdentifier %>';
+import <%= svgIdentifier %>Svg from '@ireact-material-icons/svg/lib/asn/<%= fatherPath %>/<%= svgIdentifier %>';
 import IReactMaterialIcon, { IReactMaterialIconProps } from '../components/IReactMaterialIcon';
 
 const <%= svgIdentifier %> = (
@@ -15,13 +15,11 @@ const <%= svgIdentifier %> = (
 export default React.forwardRef<HTMLSpanElement, IReactMaterialIconProps>(<%= svgIdentifier %>);
 `;
 
-export const iconsIndex = (entryText: string) => {
-	return `
+export const iconsIndex = (entryText: string) => `
 // GENERATE BY ./scripts/generate.ts
 // DON NOT EDIT IT MANUALLY
 
 ${entryText}
   `;
-};
 
 export default {};

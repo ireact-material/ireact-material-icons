@@ -3,13 +3,13 @@ import { updateCSS } from "rc-util/lib/Dom/dynamicCSS";
 import warn from "rc-util/lib/warning";
 import React, { useContext, useEffect } from "react";
 
-import IconContext from "./components/Context";
-
-// type
 import type {
 	AbstractNode,
 	IconDefinition,
-} from "ireact-material-icons-svg/lib/types";
+} from "@ireact-material-icons/svg/lib/types";
+import IconContext from "./components/Context";
+
+// type
 
 // 属性
 export type Attrs = Record<string, string>;

@@ -1,3 +1,7 @@
+import type {
+	AbstractNode,
+	IconDefinition,
+} from "@ireact-material-icons/svg/lib/types";
 import {
 	generate,
 	getSecondaryColor,
@@ -7,10 +11,6 @@ import {
 } from "../utils";
 
 // type
-import type {
-	AbstractNode,
-	IconDefinition,
-} from "ireact-material-icons-svg/lib/types";
 
 export interface IconProps {
 	icon: IconDefinition;

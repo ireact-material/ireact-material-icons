@@ -1,3 +1,4 @@
+import type { IconDefinition } from "@ireact-material-icons/svg/lib/types";
 import classNames from "classnames";
 import * as React from "react";
 
@@ -11,7 +12,6 @@ import IconBase from "./IconBase";
 // type
 import type { IconBaseProps } from "./Icon";
 import type { TwoToneColor } from "./TwoTonePrimaryColor";
-import type { IconDefinition } from "ireact-material-icons-svg/lib/types";
 
 export interface IReactMaterialIconProps extends IconBaseProps {
 	twoToneColor?: TwoToneColor;

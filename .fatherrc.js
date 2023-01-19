@@ -8,7 +8,7 @@ export default defineConfig({
 	esm: {
 		transformer: "babel",
 		alias: {
-			"ireact-material-icons-svg/lib": "ireact-material-icons-svg/es",
+			"@ireact-material-icons/svg/lib": "@ireact-material-icons/svg/es",
 			"rc-util/lib": "rc-util/es",
 		},
 		output: "es",
