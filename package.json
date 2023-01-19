@@ -64,6 +64,7 @@
     "ireact-material-icons-svg": "^0.0.6",
     "lint-staged": "^13.1.0",
     "rc-util": "^5.9.4",
+    "rome": "^11.0.0",
     "umi-lint": "^2.0.2"
   },
   "resolutions": {
