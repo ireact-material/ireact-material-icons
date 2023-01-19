@@ -1,22 +1,2 @@
 node_modules
-.DS_Store
-dist
-pnpm-lock.yaml
-package-lock.json
-yarn-lock.json
-
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-.dumi
-.dumi/*
-src/.umi
-lib
-es
-
-# publish
-.umi
-icons
-src/icons
+**/*/node_modules
