@@ -1,0 +1,14 @@
+{
+  "name": "root",
+  "private": true,
+  "scripts": {
+    "icons:baseline:g": "lerna run --scope @ireact-material-icons/baseline g",
+    "icons:baseline:build": "lerna run --scope @ireact-material-icons/baseline build"
+  },
+  "devDependencies": {
+    "lerna": "^3.4.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

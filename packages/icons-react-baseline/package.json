@@ -1,6 +1,6 @@
 {
   "name": "@ireact-material-icons/baseline",
-  "version": "0.0.3",
+  "version": "0.0.8",
   "main": "./lib/index.js",
   "module": "./es/index.js",
   "sideEffects": false,
@@ -19,7 +19,8 @@
     "lint": "eslint src/ --ext .tsx,.ts",
     "build": "father build",
     "generate": "rimraf src/icons && TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts",
-    "g": "npm run generate"
+    "g": "npm run generate",
+    "publish": "npm publish"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "rome format --write"
@@ -82,8 +83,8 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
-    "@ireact-material-icons/svg": "^0.0.7",
     "classnames": "^2.2.6",
+    "@ireact-material-icons/svg": "^0.0.7",
     "ireact-material-colors": "^0.0.1",
     "rc-util": "^5.9.4"
   },
