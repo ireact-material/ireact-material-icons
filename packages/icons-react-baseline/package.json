@@ -1,17 +1,21 @@
 {
   "name": "@ireact-material-icons/baseline",
-  "version": "1.0.0",
+  "description": "google material icons svg",
+  "author": "282126990@qq.com",
+  "version": "1.0.4",
   "main": "./lib/index.js",
   "module": "./es/index.js",
   "sideEffects": false,
-  "license": "MIT",
-  "repository": "https://github.com/ireact-material/ireact-material-icons",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ireact-material/ireact-material-icons"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
   "engines": {
     "node": ">=8"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org"
   },
   "scripts": {
     "clean": "./scripts/cleanup.sh",
@@ -19,8 +23,7 @@
     "lint": "eslint src/ --ext .tsx,.ts",
     "build": "father build",
     "generate": "rimraf src/icons && TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts",
-    "g": "npm run generate",
-    "publish": "npm publish"
+    "g": "npm run generate"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "rome format --write"
