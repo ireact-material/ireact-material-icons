@@ -1,5 +1,7 @@
 # IReact Material Icons
 
+[![NPM version](https://img.shields.io/npm/v/@ireact-material-icons/outline.svg?style=flat)](https://npmjs.org/package/@ireact-material-icons/outline)
+
 ## Install
 
 ```bash
@@ -11,8 +13,8 @@ yarn add @ireact-material-icons/outline
 You can import it directly or destructure from `@ireact-material-icons/outline` when tree-shaking enabled.
 
 ```ts
-import SmileOutlined from '@ireact-material-icons/outline/SmileOutlined';
-import { SmileOutlined } from '@ireact-material-icons/outline';
+import ABC from '@ireact-material-icons/outline/ABC';
+import { ABC } from '@ireact-material-icons/outline';
 ```
 
 ## Component Interface

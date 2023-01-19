@@ -1,5 +1,7 @@
 # IReact Material Icons
 
+[![NPM version](https://img.shields.io/npm/v/@ireact-material-icons/baseline.svg?style=flat)](https://npmjs.org/package/@ireact-material-icons/baseline)
+
 ## Install
 
 ```bash
@@ -11,8 +13,8 @@ yarn add @ireact-material-icons/baseline
 You can import it directly or destructure from `@ireact-material-icons/baseline` when tree-shaking enabled.
 
 ```ts
-import SmileBaseline from '@ireact-material-icons/baseline/SmileBaseline';
-import { SmileBaseline } from '@ireact-material-icons/baseline';
+import ABC from '@ireact-material-icons/baseline/ABC';
+import { ABC } from '@ireact-material-icons/baseline';
 ```
 
 ## Component Interface

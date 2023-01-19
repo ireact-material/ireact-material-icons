@@ -1,0 +1,106 @@
+{
+  "name": "@ireact-material-icons/sharp",
+  "description": "google material icons svg",
+  "author": "282126990@qq.com",
+  "version": "1.0.7",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "sideEffects": false,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ireact-material/ireact-material-icons"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "files": [
+    "lib",
+    "es",
+    "src"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "clean": "./scripts/cleanup.sh",
+    "start": "dumi dev",
+    "lint": "eslint src/ --ext .tsx,.ts",
+    "build": "father build",
+    "generate": "rimraf src/icons && TS_NODE_PROJECT=scripts/tsconfig.json node -r ts-node/register scripts/generate.ts",
+    "g": "npm run generate"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "rome format --write"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@babel/eslint-plugin": "^7.19.1",
+    "@testing-library/react": "^12",
+    "@types/classnames": "^2.3.1",
+    "@types/enzyme": "^3.10.3",
+    "@types/jest": "^29.0.0",
+    "@types/jest-axe": "^3.5.3",
+    "@types/jest-environment-puppeteer": "^5.0.0",
+    "@types/jest-image-snapshot": "^6.1.0",
+    "@types/lodash": "^4.14.136",
+    "@types/node": "^13.9.3",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "^5.48.2",
+    "@umijs/fabric": "^2.2.2",
+    "cross-env": "^5.2.0",
+    "dumi": "^2.1.4",
+    "enzyme": "^3.10.0",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-import-resolver-typescript": "^3.5.2",
+    "eslint-plugin-compat": "^4.0.2",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "father": "^4.1.3",
+    "glob": "^7.1.6",
+    "jest": "^29.0.0",
+    "jest-axe": "^7.0.0",
+    "jest-canvas-mock": "^2.4.0",
+    "jest-environment-jsdom": "^29.0.1",
+    "jest-environment-node": "^29.0.0",
+    "jest-image-snapshot": "^6.0.0",
+    "jest-puppeteer": "^6.0.0",
+    "lint-staged": "^13.1.0",
+    "lodash": "^4.17.15",
+    "mobx": "^5.1.0",
+    "mobx-react": "^6.1.3",
+    "prettier": "^2.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.0",
+    "rome": "^11.0.0",
+    "styled-components": "^3.3.3",
+    "ts-node": "^8.0.0",
+    "typescript": "~4.9.3"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@ireact-material-icons/svg": "^1.0.0",
+    "classnames": "^2.2.6",
+    "ireact-material-colors": "^0.0.1",
+    "rc-util": "^5.9.4"
+  },
+  "resolutions": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0"
+  }
+}

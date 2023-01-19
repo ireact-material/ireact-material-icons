@@ -1,10 +1,10 @@
 import * as React from "react";
-import { AbcOutline, AcUnitOutline } from "../../src";
+import { Abc, AcUnit } from "../../src";
 
 const Basic = () => (
 	<div>
-		<AbcOutline onMouseDown={() => console.log("mouse down")} />
-		<AcUnitOutline onClick={() => console.log("click")} />
+		<Abc onMouseDown={() => console.log("mouse down")} />
+		<AcUnit onClick={() => console.log("click")} />
 	</div>
 );
 

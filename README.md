@@ -1,34 +1,22 @@
-# IReact Material Icons
+<p align="center">
+<img
+ width="100px" alt="logo" src="https://avatars.githubusercontent.com/u/121840434?s=200&v=4" />
+</p>
 
-## Install
+<p align="center">
+⭐ The abstract trees of the SVG icons.
+</p>
 
-```bash
-yarn add ireact-material-icons
-```
+<div align="center">
 
-## Basic Usage
+[![CircleCI status][circleci-image]][circleci-url]
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
 
-You can import it directly or destructure from `ireact-material-icons` when tree-shaking enabled.
+[circleci-image]: https://img.shields.io/circleci/build/github/ant-design/ant-design-icons/master?style=flat-square
+[circleci-url]: https://circleci.com/gh/ant-design/ant-design-icons
+</div>
 
-```ts
-import SmileOutlined from 'ireact-material-icons/SmileOutlined';
-import { SmileOutlined } from 'ireact-material-icons';
-```
+## Packages
 
-## Component Interface
-
-```ts
-interface IreactMaterialIconProps {
-  className?: string;
-  onClick?: React.MouseEventHandler<SVGSVGElement>;
-  style?: React.CSSProperties;
-}
-```
-
-## Release
-
-```bash
-npm run generate
-npm run compile
-npm publish
-```
+- @ireact-material-icons/baseline: [@ireact-material-icons/baseline](./packages/icons-react-baseline) [![NPM version](https://img.shields.io/npm/v/@ireact-material-icons/baseline.svg?style=flat)](https://npmjs.org/package/@ireact-material-icons/baseline)
+- @ireact-material-icons/outline: [@ireact-material-icons/outline](./packages/icons-react) [![NPM version](https://img.shields.io/npm/v/@ireact-material-icons/outline.svg?style=flat)](https://npmjs.org/package/@ireact-material-icons/outline)

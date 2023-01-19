@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AbcOutline, createFromIconFont } from "../../src/index";
+import { Abc, createFromIconFont } from "../../src/index";
 import IconContext from "../../src/components/Context";
 
 const IconFont = createFromIconFont({
@@ -11,7 +11,7 @@ const Basic = () => {
 
 	return (
 		<IconContext.Provider value={rootClassName}>
-			<AbcOutline />
+			<Abc />
 			<IconFont type="icon-tuichu" />
 		</IconContext.Provider>
 	);
