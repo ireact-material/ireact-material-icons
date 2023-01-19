@@ -1,94 +1,95 @@
 import classNames from "classnames";
 import * as React from "react";
+
 import Context from "./Context";
+import { getTwoToneColor, setTwoToneColor } from "./TwoTonePrimaryColor";
 
 // component
 import { normalizeTwoToneColors } from "../utils";
 import IconBase from "./IconBase";
 
 // type
-import { IconDefinition } from "ireact-material-icons-svg/lib/types";
 import type { IconBaseProps } from "./Icon";
 import type { TwoToneColor } from "./TwoTonePrimaryColor";
-import { getTwoToneColor, setTwoToneColor } from "./TwoTonePrimaryColor";
+import type { IconDefinition } from "ireact-material-icons-svg/lib/types";
 
 export interface IReactMaterialIconProps extends IconBaseProps {
-  twoToneColor?: TwoToneColor;
+	twoToneColor?: TwoToneColor;
 }
 
 // props
 export interface IconComponentProps extends IReactMaterialIconProps {
-  icon: IconDefinition;
+	icon: IconDefinition;
 }
 
 interface IconBaseComponent<Props>
-  extends React.ForwardRefExoticComponent<
-    Props & React.RefAttributes<HTMLSpanElement>
-  > {
-  getTwoToneColor: typeof getTwoToneColor;
-  setTwoToneColor: typeof setTwoToneColor;
+	extends React.ForwardRefExoticComponent<
+		Props & React.RefAttributes<HTMLSpanElement>
+	> {
+	getTwoToneColor: typeof getTwoToneColor;
+	setTwoToneColor: typeof setTwoToneColor;
 }
 
 const Icon = React.forwardRef<HTMLSpanElement, IconComponentProps>(
-  (props, ref) => {
-    // props
-    const {
-      // 影响外部 <i>...</i>
-      className,
+	(props, ref) => {
+		// props
+		const {
+			// 影响外部 <i>...</i>
+			className,
 
-      // 影响内部 <svg>...</svg>
-      icon,
+			// 影响内部 <svg>...</svg>
+			icon,
 
-      tabIndex,
-      onClick,
+			tabIndex,
+			onClick,
 
-      twoToneColor,
-      ...restProps
-    } = props;
+			twoToneColor,
+			...restProps
+		} = props;
 
-    // ----------context------------//
+		// ----------context------------//
 
-    const { prefixCls = "ireactmaterialicon", rootClassName } =
-      React.useContext(Context);
+		const { prefixCls = "ireactmaterialicon", rootClassName } =
+			React.useContext(Context);
 
-    // ----------class------------//
-    const classString = classNames(
-      rootClassName,
-      prefixCls,
-      {
-        [`${prefixCls}-${icon.name}`]: !!icon.name,
-      },
-      className
-    );
+		// ----------class------------//
+		const classString = classNames(
+			rootClassName,
+			prefixCls,
+			{
+				[`${prefixCls}-${icon.name}`]: !!icon.name,
+			},
+			className,
+		);
 
-    // ----------render------------//
+		// ----------render------------//
 
-    // tabIndex
-    let iconTabIndex = tabIndex;
-    if (iconTabIndex === undefined && onClick) {
-      iconTabIndex = -1;
-    }
+		// tabIndex
+		let iconTabIndex = tabIndex;
+		if (iconTabIndex === undefined && onClick) {
+			iconTabIndex = -1;
+		}
 
-    const [primaryColor, secondaryColor] = normalizeTwoToneColors(twoToneColor);
+		const [primaryColor, secondaryColor] = normalizeTwoToneColors(twoToneColor);
 
-    return (
-      <span
-        tabIndex={iconTabIndex}
-        {...restProps}
-        onClick={onClick}
-        className={classString}
-        {...restProps}
-        ref={ref}
-      >
-        {/* 基础icon */}
-        <IconBase
-          icon={icon}
-          primaryColor={primaryColor}
-          secondaryColor={secondaryColor}
-        ></IconBase>
-      </span>
-    );
-  }
+		return (
+			<span
+				tabIndex={iconTabIndex}
+				{...restProps}
+				onClick={onClick}
+				className={classString}
+				{...restProps}
+				ref={ref}
+			>
+				{/* 基础icon */}
+				<IconBase
+					icon={icon}
+					primaryColor={primaryColor}
+					secondaryColor={secondaryColor}
+				/>
+			</span>
+		);
+	},
 ) as IconBaseComponent<IconComponentProps>;
 
 Icon.displayName = "IReactMaterialIcon";

@@ -1,10 +1,10 @@
-import { createContext } from 'react';
+import { createContext } from "react";
 
 // icon 全局 props
 export interface IconContextProps {
-  prefixCls?: string;
-  rootClassName?: string;
-  csp?: { nonce?: string };
+	prefixCls?: string;
+	rootClassName?: string;
+	csp?: { nonce?: string };
 }
 
 // context

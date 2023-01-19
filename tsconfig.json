@@ -5,9 +5,9 @@
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "node",
-    "jsx": "react",
+    "jsx": "react"
   },
-  "include": ["./src", "./typings/"],
+  "include": ["./src", "./docs/", "./typings/"],
   "typings": "./typings/index.d.ts",
   "exclude": [
     "node_modules",

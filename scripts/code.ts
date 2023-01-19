@@ -16,10 +16,12 @@ export default React.forwardRef<HTMLSpanElement, IReactMaterialIconProps>(<%= sv
 `;
 
 export const iconsIndex = (entryText: string) => {
-  return `
+	return `
 // GENERATE BY ./scripts/generate.ts
 // DON NOT EDIT IT MANUALLY
 
 ${entryText}
   `;
 };
+
+export default {};

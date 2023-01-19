@@ -3,6 +3,7 @@ node_modules
 dist
 pnpm-lock.yaml
 package-lock.json
+yarn-lock.json
 
 # Log files
 npm-debug.log*

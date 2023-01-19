@@ -1,6 +1,7 @@
 import * as React from "react";
-import * as AllBaseline from "../../src/icons";
 import styled from "styled-components";
+
+import * as AllBaseline from "../../src/icons";
 
 const Container = styled.div`
   display: flex;
@@ -25,24 +26,24 @@ const NameDescription = styled.p`
 `;
 
 const AllIconDemo = () => {
-  // 显示图标列表
-  const visibleIconList =Object.keys(AllBaseline)
+	// 显示图标列表
+	const visibleIconList = Object.keys(AllBaseline);
 
-  return (
-    <div style={{ color: "#555", overflow: 'auto' }}>
-      <Container>
-        {visibleIconList.map((iconName) => {
-          const Component = AllBaseline[iconName];
+	return (
+		<div style={{ color: "#555", overflow: "auto" }}>
+			<Container>
+				{visibleIconList.map((iconName) => {
+					const Component = AllBaseline[iconName];
 
-          return (
-            <Card key={iconName}>
-              <Component style={{ fontSize: "24px" }} />
-              <NameDescription>{iconName}</NameDescription>
-            </Card>
-          );
-        })}
-      </Container>
-    </div>
-  );
+					return (
+						<Card key={iconName}>
+							<Component style={{ fontSize: "24px" }} />
+							<NameDescription>{iconName}</NameDescription>
+						</Card>
+					);
+				})}
+			</Container>
+		</div>
+	);
 };
 export default AllIconDemo;
