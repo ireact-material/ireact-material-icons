@@ -94,6 +94,11 @@ const Icon = React.forwardRef<HTMLSpanElement, IconComponentProps>(
 
 			// 有子节点
 			if (children) {
+				// 子节点是字符串
+        if (typeof children === "string") {
+          return children;
+        }
+
 				// 是否有正确的 viewBox 属性
 				warning(
 					Boolean(viewBox) ||

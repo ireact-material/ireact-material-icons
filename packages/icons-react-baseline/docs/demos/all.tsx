@@ -2,7 +2,7 @@ import * as React from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import styled from "styled-components";
 
-import * as AllIcons from "../../src/icons";
+import * as All from "../../src/icons";
 
 const Container = styled.div`
   display: flex;
@@ -28,13 +28,13 @@ const NameDescription = styled.p`
 
 const AllIconDemo = () => {
 	// 显示图标列表
-	const visibleIconList = Object.keys(AllIcons);
+	const visibleIconList = Object.keys(All);
 
 	return (
 		<div style={{ color: "#555", overflow: "auto" }}>
 			<Container>
 				{visibleIconList.map((iconName) => {
-					const Component = AllIcons[iconName];
+					const Component = All[iconName];
 
 					return (
 						<Card key={iconName}>

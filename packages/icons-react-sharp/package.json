@@ -2,7 +2,7 @@
   "name": "@ireact-material-icons/sharp",
   "description": "google material icons svg",
   "author": "282126990@qq.com",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "./lib/index.js",
   "module": "./es/index.js",
   "sideEffects": false,
