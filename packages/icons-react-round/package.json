@@ -2,7 +2,7 @@
   "name": "@ireact-material-icons/round",
   "description": "google material icons svg",
   "author": "282126990@qq.com",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "./lib/index.js",
   "module": "./es/index.js",
   "sideEffects": false,
@@ -91,10 +91,10 @@
     "typescript": "~4.9.3"
   },
   "dependencies": {
-    "@babel/runtime": "^7.11.2",
     "@ireact-material-icons/svg": "^1.0.0",
+    "@ireact-material/colors": "^0.0.1",
+    "@babel/runtime": "^7.11.2",
     "classnames": "^2.2.6",
-    "ireact-material-colors": "^0.0.1",
     "rc-util": "^5.9.4"
   },
   "resolutions": {

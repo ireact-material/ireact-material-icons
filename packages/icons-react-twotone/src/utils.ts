@@ -1,4 +1,4 @@
-import { generate as generateColor } from "ireact-material-colors";
+import { generate as generateColor } from "@ireact-material/colors";
 import { updateCSS } from "rc-util/lib/Dom/dynamicCSS";
 import warn from "rc-util/lib/warning";
 import React, { useContext, useEffect } from "react";

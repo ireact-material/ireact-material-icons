@@ -1577,6 +1577,13 @@
   resolved "https://registry.yarnpkg.com/@ireact-material-icons/svg/-/svg-1.0.0.tgz#7dd280470bff4ed55911b2159f0438d1ffa5447a"
   integrity sha512-bXAP6zsn6y1+UPRUDNGCT/lIzO3vGLUevWzwWM4eTbM9WrOGK0T7niH+i/m475V1c8SCbfFAHYQsSp4+lXzM4Q==
 
+"@ireact-material/colors@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@ireact-material/colors/-/colors-0.0.1.tgz#9129608259355eeb4162c8fd8e7420d679a3d28d"
+  integrity sha512-8KuEVa12cwd0SkEO6y7/JiR44rtsCP3oKt1u/2PWJm0cvO/vj82/Fk/MfMipJF5Q2DvTYRkQtBCIRMVkYpNb4w==
+  dependencies:
+    "@ctrl/tinycolor" "^3.4.0"
+
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@istanbuljs/load-nyc-config/-/load-nyc-config-1.1.0.tgz#fd3db1d59ecf7cf121e80650bb86712f9b55eced"
@@ -9592,13 +9599,6 @@ ip@^1.1.4:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ip/-/ip-1.1.8.tgz#ae05948f6b075435ed3307acce04629da8cdbf48"
   integrity sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg==
-
-ireact-material-colors@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/ireact-material-colors/-/ireact-material-colors-0.0.1.tgz#43302d73f54db05a7dc844aacfd33b9eac527877"
-  integrity sha512-5y57WWxE2gFVaf8gcGp3aw0jNsVQM1yruE8iplOyGYfxnnqVbdj9XdeJGxqYiH6EQCj1JSwRPDCndAhUDxNz1w==
-  dependencies:
-    "@ctrl/tinycolor" "^3.4.0"
 
 irregular-plurals@^3.2.0:
   version "3.3.0"
